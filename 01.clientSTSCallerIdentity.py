@@ -4,8 +4,10 @@ import boto3
 
 #2. Create Client
 objClient=boto3.client('sts')
+
 #3. Request Features/Options
 response=objClient.get_caller_identity()
+
 #4. Extract details
 userId=response["UserId"]
 account=response['Account']
