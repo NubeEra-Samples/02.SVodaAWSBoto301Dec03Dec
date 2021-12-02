@@ -22,6 +22,7 @@ def fnVPCDescribe(tagKey,tagValues,maxItems=5):
 
 #Driver Code- Workflow
 if __name__=="__main__":
-    vpcLists=fnVPCDescribe(tagKey="Name",tagValues=["vpc64mujahed","vpcnikhil"],maxItems=10)    
+    vpcLists=fnVPCDescribe(tagKey="Name",tagValues=["vpc64mujahed","vpcds","Nikhil","nishivpc93"],maxItems=10)    
+    import json
     for vpc in vpcLists:
-        print( vpc )
+        print( json.dumps(vpc,indent=4) )
