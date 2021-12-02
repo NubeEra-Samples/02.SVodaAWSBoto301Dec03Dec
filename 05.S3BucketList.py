@@ -9,3 +9,7 @@ iterator=s3.buckets.all()
 
 for b in iterator:
     print(f"{b.name}",end=",")
+
+
+# for obj in s3.Bucket(name="my-bucket").objects.all():
+#     print(obj.key)

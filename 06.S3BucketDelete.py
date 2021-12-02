@@ -17,6 +17,8 @@ bucketName="bktd10458mujahed"
 Bucket=s3resource.Bucket(bucketName)
 
 def cleanup_bucket_objects(myBucket):
+    #Delete All Objects().delete()
+    # myBucket.objects.delete()
     # Delete All Objects
     for obj in myBucket.objects.all():
         obj.delete()
