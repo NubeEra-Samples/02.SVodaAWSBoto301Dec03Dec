@@ -13,8 +13,6 @@ def lambda_handler(event, context):
     print("Inserted: ",s3dynamodbhelper.DYNAMODB_TABLE_NAME)
     print("______________________________________")
     
-    
-    
     return {
         'statusCode': 200,
         'body': json.dumps('Welcome from Lambda!')
